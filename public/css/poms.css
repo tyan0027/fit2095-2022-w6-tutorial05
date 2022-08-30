@@ -1,0 +1,26 @@
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: bisque; */
+}
+
+a{
+    margin-right: 1cm;
+    font-size: medium;
+}
+
+a:hover, a:active {
+    background-color: red;
+  }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}

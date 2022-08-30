@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="poms.css">
+</head>
+<body>
+    <!-- POST data is submitted by a form and “posted” to the web server as form data.  -->
+    <h1>Welcome to POMS App (Week 5)</h1>
+    <a href="/">Home</a>
+    <a href="/addparcel">Add New Parcel</a> 
+    <a href= "/listparcels">List Parcels</a>
+    <a href= "/delparcel">Delete Parcels</a>
+    <a href= "/updateparcel">Update Parcels</a>
+    <hr />
+
+    <h1>New Parcel</h1>
+    <form action="/newparcel" method="POST">
+        <table style="width:100%">
+            <tr>
+                <td><label>Sender</label></td>
+                <td><input type="text" name="sender" /></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td><input type="text" name="address" /></td>
+            </tr>
+            <tr>
+                <td><label>Weight</label></td>
+                <td><input type="number" name="weight" /></td>
+            </tr>
+            <tr>
+                <td><label>isFragile?</label></td>
+                <td><select name="fragile">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td><label>Shipment Cost</label></td>
+                <td><input type="number" name="cost" /></td>
+            </tr>
+            <tr>
+                <td><button>Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
